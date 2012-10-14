@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+	<meta charset = "utf-8">
+	<title>자기소개서  3장</title>
+	<style type = "text/css">a:link, a:visited{background-color:yellow;color:blue;padding:1px; text-decoration:none;}</style>
+	<style type = "text/css">a:hover, a:active{background-color:red;}</style>
+	<style type="text/css">table {color: black;background-color: #EEE9BF;}</style>
+	<style type="text/css">input,textarea,select{background-color:#EED5D2;}</style>
+</head>
+<body>
+	<table border = "1">
+		<form action = "/update.php" method = "{post/get}">
+		<input type = "hidden" name = "type" value = "user"/>
+		<thead>
+			<tr>
+				<th></th>
+				<th>설문내용</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>학번</td>
+				<td><input type = "text" name = "idid" size = "10"/>
+					<input type = "button" value = "중복조회"/></td>
+			</tr>
+			<tr>
+				<td>이름</td>
+				<td><input type = "text" name = "name" size = "5"></td>
+			</tr>
+			<tr>
+				<td>발사이즈</td>
+				<td><input type = "text" name = "foot" size = "20"></td>
+			</tr>
+			<tr>
+				<td>성별</td>
+				<td><input type = "radio" name = "sex" value = "m"/>남
+					<input type = "radio" name = "sex" value = "f"/>여</td>
+			</tr>
+			<tr>
+				<td>장점</td>
+				<td><input type = "text" name = "merit" size = "8"/>
+				단점
+				<input type = "text" name = "merce" size = "8"/></td>
+			</tr>
+			<tr>
+				<td>지역</td>
+				<td> <select name = "job">
+					<option value = "seoul">서울</option>
+					<option value = "busan">부산</option>
+					<option value = "busan">기타</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td>가고싶은 여행지</td>
+				<td><textarea cols = "30" rows = "5" name = "travel"></textarea>
+				</tr>
+				<tr>
+					<td>장래희망</td>
+					<td><textarea cols = "30" rows = "5" name = "future"></textarea>
+				</tr>
+				<tfoot>
+					<tr>
+			 <th colspan = "2"><input type = "checkbox" name = "hobby" value = "check"/>설문에 응합니다.<br><input type = "button" value = "설문조사"/></th>
+			</tr>
+		</tfoot>
+	</form>
+	</table>
+	<br>
+	<a href = "http://localhost/index1_1.html">제1장으로~</a> <a href = "http://localhost/index2_1.html">제2장으로~</a>
+</body>
+</html>
